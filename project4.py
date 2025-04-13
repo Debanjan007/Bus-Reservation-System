@@ -1,0 +1,13 @@
+from tkinter import *
+root=Tk()
+root.geometry("1366x768")
+Label(root,text="  ").grid(row=0,column=0,padx=200)
+label1=Label(root,text="Online Bus Booking System",font=("Aerial 30 bold"),fg="red",bg="sky blue")
+pic=PhotoImage(file='C:\\Users\\DEBANJAN SINGHA ROY\\OneDrive\\Desktop\\Bus Reservation System\\Bus_for_Project.png')
+Label(root,image=pic).grid(row=0,column=1,columnspan=6)
+label1.grid(row=1,column=1,pady=15,columnspan=6)
+Label(root,text="Check your booking",font=("Aerial 20 bold"),fg="green",bg="light green").grid(row=2,column=2,pady=20)
+Label(root,text="Enter your Mobile no.",font=("Aerial 15 bold")).grid(row=4,column=1)
+Entry(root).grid(row=4,column=2)
+Button(root,text="Check Your Booking",font=("Aerial 12 bold")).grid(row=4,column=3)
+root.mainloop()
